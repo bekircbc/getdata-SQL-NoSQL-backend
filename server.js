@@ -6,6 +6,8 @@ const port = 3054;
 
 app.use(cors());
 
+app.use(express.static("public"));
+
 app.get("/", (req, res) => {
   res.send("<h1>Getting Data From SQL or NoSQL Database</h1>");
 });
